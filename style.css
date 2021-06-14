@@ -3,16 +3,89 @@
   margin: 0;
 }
 
-body {
-  background-color: black;
-}
-
 .container {
   height: 80vh;
   width: 80vw;
-  background-color: white;
+  background: url(/images/bg-pattern-top-desktop.svg);
   position: fixed;
   top: 50px;
   left: 130px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 25% 75%;
+      grid-template-rows: 25% 75%;
+}
+
+.article1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 40%;
+      grid-template-columns: 40% 40%;
+  padding: 5%;
+  grid-column-gap: 3em;
+}
+
+.article2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 30% 30%;
+      grid-template-columns: 30% 30% 30%;
+  padding: 10%;
+  grid-column-gap: 2em;
+}
+
+#grid1 {
+  padding: 30px;
+}
+
+#grid1 h1 {
+  color: #502050;
+}
+
+#grid1 p {
+  color: #ee68a4;
+  font-size: small;
+}
+
+#grid2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 5% 5% 5%;
+      grid-template-rows: 5% 5% 5%;
+  grid-row-gap: 3em;
+}
+
+.ratings {
+  width: 200px;
+  height: 30px;
+  background-color: #f7f2f7;
+  padding: 10px 0px 10px 0px;
+  border-radius: 3%;
+}
+
+.card {
+  background-color: #502050;
+  border-radius: 3%;
+  color: white;
+}
+
+.card .name {
+  padding-top: 70px;
+}
+
+.card img {
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.card .head-info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
+}
+
+.card .buyer-tag {
+  color: #937b92;
 }
 /*# sourceMappingURL=style.css.map */

@@ -2,14 +2,78 @@
     padding:0;
     margin:0;
 }
-body{
-    background-color: black;
-}
 .container{
     height:80vh;
     width:80vw;
-    background-color: white;
+    background: url(/images/bg-pattern-top-desktop.svg) ;
     position:fixed;
     top:50px;
     left:130px;
+    display: grid;
+    grid-template-rows: 25% 75%;
+
 }
+
+.article1{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    padding: 5%;
+    grid-column-gap: 3em;
+
+}
+.article2{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    padding:10%;
+    grid-column-gap: 2em;
+}
+
+#grid1{
+    padding:30px;
+
+    h1{
+        color:hsl(300, 43%, 22%);
+    }
+    p{
+        color:hsl(333, 80%, 67%);
+        font-size: small;
+    }
+    
+}
+#grid2{
+    display: grid;
+    grid-template-rows: 5% 5% 5%;
+    grid-row-gap: 3em;
+    
+}
+
+.ratings{
+    width:200px;
+    height:30px;
+    background-color:hsl(300, 24%, 96%);
+    padding:10px 0px 10px 0px;
+    border-radius: 3%;
+}
+.card{
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 3%;
+    color:white;
+    .name{
+       
+        padding-top:70px;
+    }
+    img{
+        padding:20px;
+        border-radius: 50%;
+    }
+    .head-info{
+        display: grid;
+        grid-template-columns: 40% 60%;
+        
+    }
+    .buyer-tag{
+        color:hsl(303, 10%, 53%);
+    }
+}
+
+
