@@ -2,13 +2,14 @@
     padding:0;
     margin:0;
 }
+
 .container{
     height:80vh;
-    width:80vw;
-    background: url(/images/bg-pattern-top-desktop.svg) ;
+    width:95vw;
+    background: url(/images/bg-pattern-top-desktop.svg) white;
     position:fixed;
     top:50px;
-    left:130px;
+    left:50px;
     display: grid;
     grid-template-rows: 25% 75%;
 
@@ -19,24 +20,60 @@
     grid-template-columns: 40% 40%;
     padding: 5%;
     grid-column-gap: 3em;
+    
+.ratings{
+    width:350px;
+    height:30px;
+    background-color:hsl(300, 24%, 96%);
+    padding:10px 0px 10px 0px;
+    border-radius: 3%;
+    margin-left:70px;
+}
+
+#stars2{
+    margin-left:100px;
+}
+#stars3{
+    margin-left:130px;
+}
 
 }
 .article2{
     display: grid;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: 33% 33% 33%;
     padding:10%;
-    grid-column-gap: 2em;
+    grid-column-gap: 1.5em;
+    #card1{
+        margin-top: 15px;
+        margin-bottom: 45px;
+    }
+    #card2{
+        margin-top:30px;
+        margin-bottom:30px;
+    }
+    #card3{
+        margin-top: 45px;
+        margin-bottom: 15px;
+    }
 }
-
+//for the color of stars
+.checked {
+    color: orange;
+  }
+  .fa{
+      padding:5px;
+  }
 #grid1{
-    padding:30px;
+    padding:10px 50px 0px 60px;
 
     h1{
         color:hsl(300, 43%, 22%);
+        margin-bottom:10px;
+        font-weight: bolder;
     }
     p{
-        color:hsl(333, 80%, 67%);
-        font-size: small;
+        color:hsl(300, 43%, 22%);
+        font-size:medium;
     }
     
 }
@@ -44,36 +81,37 @@
     display: grid;
     grid-template-rows: 5% 5% 5%;
     grid-row-gap: 3em;
-    
-}
 
-.ratings{
-    width:200px;
-    height:30px;
-    background-color:hsl(300, 24%, 96%);
-    padding:10px 0px 10px 0px;
-    border-radius: 3%;
+    
 }
 .card{
     background-color: hsl(300, 43%, 22%);
     border-radius: 3%;
     color:white;
+    .namw{
+        display: grid;
+        grid-template-columns: 100%;
+    }
     .name{
-       
-        padding-top:70px;
+        padding-top:40px;
     }
     img{
-        padding:20px;
+        padding:20px 10px 0 20px;
         border-radius: 50%;
     }
     .head-info{
         display: grid;
-        grid-template-columns: 40% 60%;
+        grid-template-columns:40% 60%;
         
     }
     .buyer-tag{
         color:hsl(303, 10%, 53%);
+        padding-bottom: 30px;
     }
+    .message{
+        padding:20px;
+    }
+   
 }
 
 
